@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Quan ly Khach hang</title>
+</head>
+<body>
+<div align="center">
+    <h1> Product Manager</h1>
+    <table border="1">
+        <thead>
+        <tr>
+            <th> MaKhachHang</th>
+            <th>TenKhachHang</th>
+            <th> Email</th>
+            <th>SoDienThoai</th>
+            <th> NgaySinh</th>
+            <th>MaLoai</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="product :${listProducts}">
+            <td th:text="$product.MaKhachHang">MaKhachHang</td>
+            <td th:text="$product.TenKhachHang">TenKhachHang</td>
+            <td th:text="$product.Email">Email</td>
+            <td th:text="$product.SoDienThoai">SoDienThoai</td>
+            <td th:text="$product.NgaySinh">NgaySinh</td>
+            <td th:text="$product.MaLoai">MaLoai</td>
+
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
+XMA Header Image
